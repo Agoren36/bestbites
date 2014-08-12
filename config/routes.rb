@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  root 'pages#home'
+  get 'aboutme' => 'pages#aboutme'   # Creates aboutme_path
+  get 'vote' => 'pages#vote'         # Creates vote_path
+  get 'results' => 'pages#results'   # Creates results_path
+  get 'events' => 'pages#events'     # Creates events_path
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
