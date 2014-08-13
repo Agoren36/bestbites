@@ -1,4 +1,5 @@
 <nav class="navbar navbar-default" role="navigation">
+  <div class='container'>
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -7,13 +8,13 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Best Of</a>
+    <%= link_to 'Best Of', root_path, class: 'navbar-brand' %>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
        <ul class="nav navbar-nav">
-        <li><%= link_to "Home", root_path %></li>
+        
       <li><%= link_to "About Me", aboutme_path %></li> 
          <li><%= link_to "Vote", vote_path %></li>
       <li><%= link_to "Results", results_path %></li> 
@@ -24,4 +25,5 @@
       </ul>
    
   </div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
 </nav>
